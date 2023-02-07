@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <title>Test Project</title>
+    <script src="javascript.js" type ="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  </head>
+  <link rel="stylesheet" type="text/css" href="styles/stylesen.css" />
+
+
+  <body>
+    <header>
+      <div id="navigation-bar"></div>
+    </header>
+    
+
+    <div class="body1">
+      <div class="body1-left">
+        <h1>Sentiment Analyser</h1>
+        Use sentiment analysis to quickly detect emotions in text data.<br><br><br>
+          <form id="textarea" method = "post" onsubmit="return false">
+            <textarea placeholder="Type or paste your text here" id="input_text_area_sen" name="input_text_area_sen" rows="25"></textarea>
+            <br><br>
+            <button id = "getresults_button_sen" onclick="sentimentsend()">Get results</button>
+
+            <button id = "clearesultssen" onclick="clearres()">Clear</button>
+          </form>  
+      </div>
+      <div class="body1-right">
+
+        <h1>Results </h1>
+
+          <div class='loader' style="display:none;">
+          </div>
+        <div id="divsentavg"> </div>
+          <br>
+        <div id="resultstext" style="font-size: 18px;font-family: sans-serif;"></div>
+
+      
+      </div>
+    </div>
+    <div class="body2">
+      <div id="result">
+        <p>Results with 70% confidence.</p>
+        <p><span style="color: grey;">Grey</span> color represents a neutral sentiment.</p>
+        <p><span style="color: green;">Green</span> color represents a positive sentiment.</p>
+        <p><span style="color: red;">Red</span> color represents a negative sentiment.</p>
+      </div>
+    </div>
+
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <img src="images/sent.png"/>
+      </div>
+</html>
+
+<!--
+
+Accuracy (Logistic Regression): 0.7014347896179268
+
+Classification Report:
+               precision    recall  f1-score   support
+
+    negative       0.74      0.62      0.67      1809
+     neutral       0.63      0.75      0.69      2475
+    positive       0.78      0.73      0.75      1919
+
+    accuracy                           0.70      6203
+   macro avg       0.72      0.70      0.70      6203
+weighted avg       0.71      0.70      0.70      6203
+
+
+
+-->

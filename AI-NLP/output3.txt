@@ -1,0 +1,5 @@
+{
+  "paraphrased_text": [
+    "Davis et al. (2015) set out to empirically test the popular saying \"A apple a day keeps the doctor away\" Apples are often used to represent a healthy lifestyle, and research has shown that their nutritional properties could be beneficial for various aspects of health. The authors unique approach is to take the saying literally and ask: Do people who eat apples use health services less often? If there is indeed such a relation, they suggest, promoting apple consumption could help reduce healthcare costs."
+  ]
+}

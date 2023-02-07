@@ -1,0 +1,13 @@
+{
+  "extract_keywords": [
+    "apple"
+  ],
+  "extract_summary": " Davis et al. (2015) set out to empirically test the popular saying \u2018an apple a day keeps the doctor away\u2019 They ask: do people who eat apples use healthcare services less frequently? If there is indeed such a relationship, they suggest, promoting apple consumption could help reduce healthcare costs .",
+  "extract_keypoints": [
+    "If there is indeed such a relationship, they suggest, promoting apple consumption could help reduce healthcare costs.",
+    "Apples are often used to represent a healthy lifestyle, and research has shown their nutritional properties could be beneficial for various aspects of health.",
+    "(2015) set out to empirically test the popular saying \u201can apple a day keeps the doctor away\".",
+    "The authors\u2019 unique approach is to take the saying literally and ask: do people who eat apples use healthcare services less frequently?",
+    "Davis et al."
+  ]
+}

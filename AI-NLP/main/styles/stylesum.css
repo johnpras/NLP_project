@@ -1,0 +1,202 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+.navbar {
+    overflow: hidden;
+    text-align: center;
+    height: auto;
+    background-color: #3e1266;
+    width: 100%;
+    padding-left: 35%;
+    font-family: sans-serif;
+    border-bottom: 1px solid white;
+}
+.navbar a {
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+}
+.navbar a:hover{
+    background-color: red;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown .dropbtn {
+    font-size: 26px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3e1266;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+  
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: red;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.loader {
+    margin:auto; 
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    left: 50%;
+
+
+    width: 120px;        
+    padding: 15px;      
+    background: #f8f8f8; 
+    
+    aspect-ratio: 1;
+    border-radius: 50%;
+    --_m: 
+      conic-gradient(#0000,#000),
+      linear-gradient(#000 0 0) content-box;
+    -webkit-mask: var(--_m);
+            mask: var(--_m);
+    -webkit-mask-composite: source-out;
+            mask-composite: subtract;
+    box-sizing: border-box;
+    animation: load 1s linear infinite;
+}
+  
+@keyframes load {
+    to{transform: rotate(1turn)}
+}
+  
+
+
+
+
+
+* { box-sizing: border-box; }
+.body1{
+    margin: 50px 10%;
+    padding: 0.5rem;
+    display: flex;
+}
+
+.body1-left,.body1-right{
+    height: 700px;
+    width: 600px;
+    border: 1px solid black;
+    padding: 0.5rem;
+    flex-grow: 1;
+    color: black;
+
+    font-size: 18px;
+    font-family: sans-serif;
+}
+#input_text_area_sum{
+    width:100%;
+    resize: none;
+}
+#getresults_button_sum{
+    font-size: 2vh;
+    font-weight: 600;
+    line-height: 1.45;
+    border-radius: 8px;
+    border: none;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    justify-content: center;
+    white-space: nowrap;
+    background-color: #3e1266;
+    color: white;
+    width:100%;
+}
+.body1-right{
+    background-color: #3e1266;
+    color: white;
+    overflow-y: scroll;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.body1-right::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.body1-right {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.card card-body,collapse{
+    color: black;
+    background-color: #3e1266;
+}
+
+
+
+
+.collapsible-boxes-wrapper {
+    width: 95%;
+    margin: auto;
+    margin-top: 5%;
+    padding: 0px 15px 15px 15px;
+    border: 3px solid #F99417;
+    border-radius: 15px;
+    
+    color: #F5F5F5;
+    background-color: #5D3891;
+}
+
+.list-box {
+    border-bottom: 1px solid #F99417;
+    padding: 15px;
+}
+
+.list-box ul{
+    list-style-type: none;
+}
+
+.list-box h2:hover{
+    cursor: pointer;
+}
+
+/* Show/hide items magic */
+.list-box ul {
+  display: none;
+}
+
+.list-box ul.show {
+  display: block;
+}

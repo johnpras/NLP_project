@@ -1,0 +1,186 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+.navbar {
+    overflow: hidden;
+    text-align: center;
+    height: auto;
+    background-color: #3e1266;
+    width: 100%;
+    padding-left: 35%;
+    font-family: sans-serif;
+    border-bottom: 1px solid white;
+}
+.navbar a {
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+}
+.navbar a:hover{
+    background-color: red;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown .dropbtn {
+    font-size: 26px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3e1266;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+  
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: red;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.loader {
+    margin:auto; 
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    left: 50%;
+
+
+    width: 120px;        /* the size */
+    padding: 15px;       /* the border thickness */
+    background: #000000; /* the color */
+    
+    aspect-ratio: 1;
+    border-radius: 50%;
+    --_m: 
+      conic-gradient(#0000,#000),
+      linear-gradient(#000 0 0) content-box;
+    -webkit-mask: var(--_m);
+            mask: var(--_m);
+    -webkit-mask-composite: source-out;
+            mask-composite: subtract;
+    box-sizing: border-box;
+    animation: load 1s linear infinite;
+}
+  
+@keyframes load {
+    to{transform: rotate(1turn)}
+}
+  
+
+
+
+
+
+* { box-sizing: border-box; }
+.body1{
+    margin: 50px 10%;
+    padding: 0.5rem;
+    display: flex;
+    
+}
+
+.body1-left,.body1-right{
+    height: 700px;
+    width: 600px;
+    border: 1px solid black;
+    padding: 0.5rem;
+    flex-grow: 1;
+    color: black;
+    align-items: center;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.body1-right{
+    border-left: none;
+    color: black;
+}
+
+#input_text_area_par{
+    width:100%;
+    resize: none;
+}
+#results_text_area_par{
+    width:100%;
+    resize: none;
+}
+#getresults_button_par{
+    font-size: 2vh;
+    font-weight: 600;
+    line-height: 1.45;
+    border-radius: 8px;
+    border: none;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    justify-content: center;
+    white-space: nowrap;
+    background-color: #3e1266;
+    color: white;
+    width:100%;
+}
+
+#clearesultspar{
+    font-size: 2vh;
+    font-weight: 600;
+    line-height: 1.45;
+    border-radius: 8px;
+
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    justify-content: center;
+    white-space: nowrap;
+    background-color: #3e1266;
+    color: white;
+    width:30%;
+    border-color: white;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.body1-right::-webkit-scrollbar,.body1-left::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.body1-right,.body1-left {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  overflow-y: scroll;
+}
+

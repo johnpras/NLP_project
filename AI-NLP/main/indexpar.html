@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <title>Test Project</title>
+    <script src="javascript.js" type ="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  </head>
+  <link rel="stylesheet" type="text/css" href="styles/stylepar.css" />
+
+  <body>
+    <header>
+      <div id="navigation-bar"></div>
+    </header>
+
+    <div class="body1">
+
+      <div class="body1-left">
+        <h1>Article Paraphraser</h1>
+        Paraphrasing Tool for Article, Sentence and Essay Rephrasing!<br><br><br>
+          <form id="textarea" method = "post" onsubmit="return false">
+            <textarea placeholder="Type or paste your text here" id="input_text_area_par" name="input_text_area_par" rows="25"></textarea>
+            <br><br>
+            <button id = "getresults_button_par" onclick="paraphrasesend()">Get results</button>
+            <button id = "clearesultspar" onclick="clearrespar()">Clear</button>
+          </form>  
+      </div>
+
+      <div class="body1-right">
+        <h1>Results </h1>
+          <div class='loader' style="display:none;">
+          </div>
+        <div id="divtextarea"> Paraphrased Text:
+          <br><br><br>
+          <textarea id="results_text_area_par" name="input_text_area_par" rows="25" readonly></textarea>
+        </div>
+          <br><br>
+  </body>
+</html>

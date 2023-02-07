@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <title>Test Project</title>
+    <script src="javascript.js" type ="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  </head>
+  <link rel="stylesheet" type="text/css" href="styles/stylesum.css" />
+
+  <body>
+    <header>
+      <div id="navigation-bar"></div>
+    </header>
+
+    <div class="body1">
+      <div class="body1-left">
+        <h1>Article Summarizer</h1>
+          Summarize any article into our unique interactive flashcard format,
+          and accelerate your reading and learning.
+          Perfect also for screening, review and research communication.<br><br><br>
+          <form id="textarea" method = "post" onsubmit="return false">
+            <textarea placeholder="Type or paste your text here" id="input_text_area_sum" name="input_text_area_sum" rows="15"></textarea>
+            <br><br>
+            <button id = "getresults_button_sum" onclick="summarysend()">Get results</button>
+          </form>  
+      </div>
+
+      <div class="body1-right">
+
+        <h1>Summary Flashcard</h1><br><br>
+
+          <div class='loader' style="display:none;"></div>
+          <div class="collapsible-boxes-wrapper">
+            <div class="list-box">
+                <h2>Keywords</h2>
+            </div>
+            <div class="list-box">
+                <h2>Key points</h2>
+            </div>
+            <div class="list-box">
+              <h2>Summary</h2>
+            </div>
+          </div>
+      </div>
+    </div>
+</html>
+
+
+    
